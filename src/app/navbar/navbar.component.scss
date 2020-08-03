@@ -1,0 +1,17 @@
+.btn {
+  min-width: 10%;
+}
+.navbar {
+  background-color: slategrey;
+}
+a {
+  position: relative;
+  span {
+    font-size: 0.9rem;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right: 0.1rem;
+    bottom: 0.1rem;
+  }
+}

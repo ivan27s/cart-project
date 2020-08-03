@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Корзина</h2>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Название товара</th>
+      <th scope="col">Стоимость</th>
+      <th scope="col">Количество</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of cartProducts">
+      <th scope="row">{{product.id}}</th>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.countInCart}}</td>
+      <td>
+        <button (click)="removeItem(product.id)" class="btn btn-danger">Удалить</button>
+      </td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <th scope="row"> Общая стоимость: {{totalPrice}}</th>
+    </tfoot>
+  </table>
+  </div>

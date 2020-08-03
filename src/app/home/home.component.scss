@@ -1,0 +1,14 @@
+li.media{
+  background-color: azure;
+  min-height: 7rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.price {
+  position: absolute;
+  right: 8%;
+  color: red;
+}

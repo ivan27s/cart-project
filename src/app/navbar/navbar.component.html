@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light">
+  <a routerLink="" class="navbar-brand" >Главная</a>
+  <a routerLink="/cart" type="button" class="btn btn-warning">
+    Корзина
+    <span>
+      {{productsService.getProductsFromCart().length
+        ? productsService.getProductsFromCart().length
+        : ' '}}
+    </span>
+  </a>
+</nav>
